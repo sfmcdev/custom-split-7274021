@@ -76,6 +76,7 @@ exports.execute = function( req, res ) {
 		
 	console.log("EXECUTE()|| Session.Valid = ", req.session.valid);
 	
+	/*
 	if( !req.session.valid )
 	{
 		console.log('NO Session');
@@ -84,10 +85,19 @@ exports.execute = function( req, res ) {
 	}
 	
 	console.log('TOKEN Available');
-
+	*/
+	
+	
+	
+	
 	//merge the array of objects for easy access in code.
-	//var aArgs = req.body.inArguments;
-	var aArgs = req.payload.inArguments;
+	var aArgs = req.body.inArguments;
+	
+	if(!aArgs)
+	{
+		console.log( "EXECUTE:: using decoded");
+		var aArgs = req.payload.inArguments;
+	}
 	console.log( "aArgs = " + aArgs );
 	var oArgs = {};
 	
@@ -103,8 +113,9 @@ exports.execute = function( req, res ) {
 		}
 	}
 		
-	//var contactKey = req.body.keyValue;
-	var contactKey = req.payload.keyValue;
+	var contactKey = req.body.keyValue;
+	if(!contactKey)
+		contactKey = req.payload.keyValue;
 	console.log("contactKey = " + contactKey);
 
 	// these values come from the config.json
@@ -126,7 +137,22 @@ exports.execute = function( req, res ) {
 	// This is a placeholder that shows an example https call
 	// to a given endpoint.  Again, you can do anything you like here.
 
-	console.log('INBOX message for ', contactKey);
+	console.log('Custom Split for ', contactKey);
+	
+	if(contactKey.indexOf("001") >= 0)
+	{
+		res.send( 200, 
+			{"msgResult": 0}
+		);
+	}	
+	else
+	{
+		res.send( 200, 
+			{"msgResult": -1}
+		);
+	}
+	
+	/*
 	var post_data = JSON.stringify({  
 		"contactKey":contactKey,
 		//"valueTier": valueTier,
@@ -166,7 +192,8 @@ exports.execute = function( req, res ) {
 			if (response.statusCode == 200) {
 				data = JSON.parse(data);
 				console.log('onEND allocateOffer:', response.statusCode, data);
-				res.send( 200, {"status": 0} ); // data.allocationId is the new offerAllocationId...this is just an example of populating an outArgument
+				res.send( 200, {"status": 0} 
+				); // data.allocationId is the new offerAllocationId...this is just an example of populating an outArgument
 			} else {
 				console.log('onEND fail:', response.statusCode);
 				res.send(response.statusCode);
@@ -181,5 +208,5 @@ exports.execute = function( req, res ) {
 	
 	httpsCall.write(post_data);
 	httpsCall.end();
-
+	*/
 };

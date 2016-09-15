@@ -15,7 +15,10 @@
     "arguments": {
         "execute": {       
 			"inArguments":[
-				{ "contactKey": "{{Contact.Key}}"}
+				{ 
+					"contactKey": "{{Contact.Key}}"
+					
+				}
                 
 			],
             "outArguments": [
@@ -27,10 +30,33 @@
             "format": "json",
 			"customerKey": "",
 			"header": "",
-            "useJwt": true,			
+            "useJwt": false,			
             "timeout": 10000
         }
     },
+	
+	"outcomes":[
+		{
+			"arguments":
+			{
+				"msgResult":0
+			},
+			"metaData": 
+			{
+				"label": "MSG OK"
+			}
+		}
+		,{
+			"arguments":
+			{
+				"msgResult":-1
+			},
+			"metaData": 
+			{
+				"label": "MSG FAILED!"
+			}
+		}
+	],
     "configurationArguments": {
     	"applicationExtensionKey": "custom-split-7274021",
         "defaults": { "name": "Custom Split"},             
@@ -40,7 +66,7 @@
             "verb": "POST",
 			"header": "",
             "customerKey": "",
-            "useJwt": true
+            "useJwt": false
         },
         "publish": {
         	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/publish/",

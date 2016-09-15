@@ -1,0 +1,67 @@
+{
+    "workflowApiVersion": "1.0",
+    "metaData": {
+        "version": "2.0",
+        "icon": "images/jb-icon.jpg",
+        "iconSmall": "images/jb-icon.jpg"
+    },
+    "type": "RestDecision",
+    "lang": {
+        "en-US": {
+            "name": "Custom Split",
+            "description": "Testing the Custom Split in JB"
+        }
+    },
+    "arguments": {
+        "execute": {       
+			"inArguments":[
+				{ "contactKey": "{{Contact.Key}}"}
+                
+			],
+            "outArguments": [
+            	{ "status":"number" }
+			],			
+			"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/execute/",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+			"customerKey": "",
+			"header": "",
+            "useJwt": true,			
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+    	"applicationExtensionKey": "custom-split-7274021",
+        "defaults": { "name": "Custom Split"},             
+        "save": {
+        	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/save/",
+            "body": "",
+            "verb": "POST",
+			"header": "",
+            "customerKey": "",
+            "useJwt": true
+        },
+        "publish": {
+        	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/publish/",
+            "verb": "POST",
+            "body": "",
+			"header": "",
+            "customerKey": "",
+            "useJwt": false
+        },
+        "validate": {
+        	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/validate/",
+            "verb": "POST",
+            "body": "",
+			"header": "",
+            "customerKey": "",
+            "useJwt": false
+        }
+    },
+    "edit": {
+    	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/",
+        "height": 400,
+        "width": 500
+    }
+}

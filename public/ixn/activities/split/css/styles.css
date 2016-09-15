@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    padding: 0px;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size:11px;
+}
+
+input{
+	width:200px;
+}
+
+input.contents{
+	height:50px;
+}
+
+td{
+	vertical-align:top;
+}
+
+#container {
+    margin: 30px;
+}

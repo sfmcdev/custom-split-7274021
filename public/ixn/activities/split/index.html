@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Custom Split</title>
+	<script data-main="js/main.js" src="js/require.js"></script>
+
+	<!--Styles-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+	<div id="step1" class="step">
+		<p><small id="version"></small></p>		
+			
+			<h2>Message Type</h2>
+		<table>
+			<tr><td>
+					<select id="selectMessageType">
+						<option value="type_coupon">COUPON</option>
+						<option value="type_other">OTHER</option>						
+					</select>			
+			</td></tr>
+		</table>
+		<h2>English Contents</h2>
+		<table>
+			<tr>
+				<td>Title</td>
+				<td><input id="titleEn"/></td>
+			</tr>
+			<tr>
+				<td>Contents</td>
+				<td><input id="contentEn" class="contents"/></td>
+			</tr>
+		</table>
+		
+		<h2>Chinese Contents</h2>
+		<table>
+			<tr>
+				<td>Title</td>
+				<td><input id="titleTc"/></td>
+			</tr>
+			<tr>
+				<td>Contents</td>
+				<td><input id="contentTc" class="contents"/></td>
+			</tr>
+		</table>
+
+	</div>
+	<div id="step2" class="step">
+		<p>Please review your settings.</p>
+		<!--
+		Value Tier: <span id="showValueTier"></span><br />
+		Type: <span id="showType"></span><br />
+		Bonus: <span id="showBonus"></span><br />
+		-->
+	</div>			
+</body>
+</html>

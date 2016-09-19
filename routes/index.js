@@ -2,7 +2,7 @@
 
 // Deps
 var activityUtils = require('./activityUtils');
-var activityOffer = require('./activityOffer');
+var activitySplit = require('./activitySplit');
 
 /*
  * GET home page.

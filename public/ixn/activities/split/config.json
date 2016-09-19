@@ -40,20 +40,12 @@
 			"arguments":
 			{
 				"msgResult":0
-			},
-			"metaData": 
-			{
-				"label": "MSG OK"
 			}
 		}
 		,{
 			"arguments":
 			{
 				"msgResult":-1
-			},
-			"metaData": 
-			{
-				"label": "MSG FAILED!"
 			}
 		}
 	],

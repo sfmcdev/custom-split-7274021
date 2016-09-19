@@ -8,7 +8,7 @@ var path        = require('path');
 var request     = require('request');
 var bodyParser  = require('body-parser');
 var routes      = require('./routes');
-var activityOffer   = require('./routes/activityOffer');
+var activitySplit   = require('./routes/activitySplit');
 var activityUtils    = require('./routes/activityUtils');
 var pkgjson = require( './package.json' );
 
@@ -93,10 +93,10 @@ app.post('/login', tokenFromJWT, routes.login );
 app.post('/logout', routes.logout );
 
 // Custom Activity Routes for interacting with Desk.com API
-app.post('/ixn/activities/offer/save/', activityOffer.save );
-app.post('/ixn/activities/offer/validate/', activityOffer.validate );
-app.post('/ixn/activities/offer/publish/', activityOffer.publish );
-app.post('/ixn/activities/offer/execute/', tokenFromJWT, activityOffer.execute );
+app.post('/ixn/activities/split/save/', activitySplit.save );
+app.post('/ixn/activities/split/validate/', activitySplit.validate );
+app.post('/ixn/activities/split/publish/', activitySplit.publish );
+app.post('/ixn/activities/split/execute/', tokenFromJWT, activitySplit.execute );
 
 
 

@@ -1,6 +1,6 @@
 {
-  "name": "jbSplit",
-  "version": "0.1",
+  "name": "custom-split-7274021",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "start": "node app.js"

@@ -21,7 +21,7 @@ var APIKeys = {
     appId           : '977e1e1c-3186-450a-9493-3a53b2a357b9',
     clientId        : 'ylf0mv2wl333zojjevml8b78',
     clientSecret    : 'hkwmmrLjHnjMxBtVkY4JziyI',
-    appSignature    : '',
+    appSignature    : 'ctxka5t1pvmkzhkuhjqcgr3wawxwdmtams1iwid33jgvhiaen20rgs5mitizfiaroxnn0e14ajgnk4rwcrfhlxaxk0jkgwnbxxlvfzxfxaetkx22gw1auzgog0fw40pzs0n1cwnpx4kyvejd3vsbjo4eudrqhn4zmhqz5xdbf1sr3flmxqwjz542u0xumxcxehy5cau3ks34w35igpicogab5nbxjmmboookapuu0eecmjibznc0rizacdke1vu',
     authUrl         : 'https://auth.exacttargetapis.com/v1/requestToken?legacy=1'
 };
 

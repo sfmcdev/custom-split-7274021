@@ -9,7 +9,7 @@ var request     = require('request');
 var bodyParser  = require('body-parser');
 var routes      = require('./routes');
 var activitySplit   = require('./routes/activitySplit');
-var activityUtils    = require('./routes/activityUtils');
+//var activityUtils    = require('./routes/activityUtils');
 var pkgjson = require( './package.json' );
 
 var app = express();

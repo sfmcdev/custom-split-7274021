@@ -5,7 +5,7 @@
         "icon": "images/jb-icon.jpg",
         "iconSmall": "images/jb-icon.jpg"
     },
-    "type": "RestDecision",
+    "type": "REST",
     "lang": {
         "en-US": {
             "name": "Custom Split",

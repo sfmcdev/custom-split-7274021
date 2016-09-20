@@ -39,13 +39,13 @@
 		{
 			"arguments":
 			{
-				"msgResult":0
+				"branchResult":0
 			}
 		}
 		,{
 			"arguments":
 			{
-				"msgResult":-1
+				"branchResult":-1
 			}
 		}
 	],

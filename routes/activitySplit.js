@@ -142,13 +142,13 @@ exports.execute = function( req, res ) {
 	if(contactKey.indexOf("001") >= 0)
 	{
 		res.send( 200, 
-			{"msgResult": 0}
+			{"branchResult": 0}
 		);
 	}	
 	else
 	{
 		res.send( 200, 
-			{"msgResult": -1}
+			{"branchResult": -1}
 		);
 	}
 	

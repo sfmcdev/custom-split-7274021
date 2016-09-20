@@ -22,7 +22,7 @@
                 
 			],
             "outArguments": [
-            	{ "status":"number" }
+            	{ "branchResult":"number" }
 			],			
 			"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/execute/",
             "verb": "POST",
@@ -33,9 +33,8 @@
             "useJwt": false,			
             "timeout": 10000
         }
-    },
-	
-	"outcomes":[
+    },	
+	"outcomes": [
 		{
 			"arguments":
 			{

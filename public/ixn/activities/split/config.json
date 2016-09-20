@@ -5,7 +5,7 @@
         "icon": "images/jb-icon.jpg",
         "iconSmall": "images/jb-icon.jpg"
     },
-    "type": "REST",
+    "type": "RESTDECISION",
     "lang": {
         "en-US": {
             "name": "Custom Split",
@@ -22,7 +22,7 @@
                 
 			],
             "outArguments": [
-            	{ "branchResult":"number" }
+            	{ "msgResult":"number" }
 			],			
 			"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/execute/",
             "verb": "POST",

@@ -6,12 +6,43 @@
         "iconSmall": "images/jb-icon.jpg"
     },
     "type": "RESTDECISION",
-    "lang": {
-        "en-US": {
-            "name": "Custom Split",
-            "description": "Testing the Custom Split in JB"
-        }
-    },
+	   "outcomes":[
+      {
+         "arguments":{
+            "branchResult":"wishlist_item",
+            "argument":"passed from config.json for wishlist_item"
+         }
+      },
+      {
+         "arguments":{
+            "branchResult":"cart_item",
+            "argument":"passed from config.json for cart_item"
+         }
+      },
+      {
+         "arguments":{
+            "branchResult":"purchase_item",
+            "argument":"passed from config.json for purchase_item"
+         },
+         "metaData":{
+         "label":"Purchase"
+   }
+      }
+   ],
+   "lang":{
+      "en-US":{
+         "name": "Custom Split",
+		 "description": "Testing the Custom Split in JB"
+         "i18n_wishlist":"Wishlist",
+         "i18n_cart":"Cart",
+         "i18n_purchase":"Purchase"
+      }
+   },
+   "outcomeLabelLanguageMap":{
+      "wishlist_item":"i18n_wishlist",
+      "cart_item":"i18n_cart",
+      "purchase_item":"i18n_purchase"
+   },
     "arguments": {
         "execute": {       
 			"inArguments":[
@@ -34,20 +65,6 @@
             "timeout": 10000
         }
     },	
-	"outcomes": [
-		{
-			"arguments":
-			{
-				"branchResult":0
-			}
-		}
-		,{
-			"arguments":
-			{
-				"branchResult":-1
-			}
-		}
-	],
     "configurationArguments": {
     	"applicationExtensionKey": "custom-split-7274021",
         "defaults": { "name": "Custom Split"},             

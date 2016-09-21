@@ -32,7 +32,7 @@
    "lang":{
       "en-US":{
          "name": "Custom Split",
-		 "description": "Testing the Custom Split in JB"
+		 "description": "Testing the Custom Split in JB",
          "i18n_wishlist":"Wishlist",
          "i18n_cart":"Cart",
          "i18n_purchase":"Purchase"

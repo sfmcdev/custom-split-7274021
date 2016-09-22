@@ -8,25 +8,21 @@
     "type": "RESTDECISION",
 	   "outcomes":[
       {
-         "arguments":{
-            "branchResult":"wishlist_item",
-            "argument":"passed from config.json for wishlist_item"
-         }
-      },
-      {
-         "arguments":{
-            "branchResult":"cart_item",
-            "argument":"passed from config.json for cart_item"
-         }
-      },
-      {
-         "arguments":{
-            "branchResult":"purchase_item",
-            "argument":"passed from config.json for purchase_item"
-         },
+        "arguments":{
+            "branchResult":"ok",
+            "argument":"passed from config.json for coupon_ok"
+        },
          "metaData":{
-         "label":"Purchase"
-   }
+         "label":"Coupon OK"
+		},
+      {
+        "arguments":{
+            "branchResult":"error",
+            "argument":"passed from config.json for coupon_error"
+        },
+        "metaData":{
+         "label":"Coupon Error"
+		}
       }
    ],
    "lang":{
@@ -39,8 +35,8 @@
       }
    },
    "outcomeLabelLanguageMap":{
-      "wishlist_item":"i18n_wishlist",
-      "cart_item":"i18n_cart",
+      "coupon_ok":"i18n_wishlist",
+      "coupon_failed":"i18n_cart",
       "purchase_item":"i18n_purchase"
    },
     "arguments": {

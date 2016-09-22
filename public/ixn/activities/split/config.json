@@ -52,7 +52,6 @@
                 
 			],
             "outArguments": [
-            	//{ "branchResult":"text" }
 			],			
 			"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/execute/",
             "verb": "POST",

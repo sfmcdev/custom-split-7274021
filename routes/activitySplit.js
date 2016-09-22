@@ -138,19 +138,19 @@ exports.execute = function( req, res ) {
 	// to a given endpoint.  Again, you can do anything you like here.
 
 	console.log('Custom Split for ', contactKey);
+	var bResult = "error";
 	
 	if(contactKey.indexOf("001") >= 0)
 	{
-		res.send( 200, 
+		bResult = "ok";
+	}	
+	
+	console.log('Custom Split result = ' + bResult);
+	
+	
+	res.send( 200, 
 			{"branchResult": "ok"}
 		);
-	}	
-	else
-	{
-		res.send( 200, 
-			{"branchResult": "error"}
-		);
-	}
 	
 	/*
 	var post_data = JSON.stringify({  

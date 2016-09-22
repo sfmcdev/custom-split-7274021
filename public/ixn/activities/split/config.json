@@ -6,32 +6,32 @@
         "iconSmall": "images/jb-icon.jpg"
     },
     "type": "RESTDECISION",
-		"outcomes":[
+	"outcomes":[
+		{
+			"arguments":
 			{
-				"arguments":
-				{
-					"branchResult":"ok"
-				},
-				"metaData":
-				{
-					"label":"Coupon OK"
-				}
+				"branchResult":"ok"
 			},
+			"metaData":
 			{
-				"arguments":
-				{
-					"branchResult":"error"
-				},
-				"metaData":
-				{
-					"label":"Coupon Error"
-				}
+				"label":"Coupon OK"
 			}
-		],
+		},
+		{
+			"arguments":
+			{
+				"branchResult":"error"
+			},
+			"metaData":
+			{
+				"label":"Coupon Error"
+			}
+		}
+	],
    "lang":{
       "en-US":{
          "name": "Custom Split",
-		 "description": "Testing the Custom Split in JB",         
+		 "description": "Testing the Custom Split in JB"        
       }
    },
     "arguments": {

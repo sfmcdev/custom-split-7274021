@@ -1,6 +1,10 @@
 {
   "name": "custom-split-7274021",
-  "version": "1.1.0",  
+  "version": "1.2.1",
+  "repository": {
+  "type": "git",
+  "url": "git.github.com/sfmcdev/custom-split-7274021"
+	},
   "private": true,
   "scripts": {
     "start": "node app.js"

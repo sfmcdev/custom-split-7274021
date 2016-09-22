@@ -9,16 +9,14 @@
 	   "outcomes":[
       {
         "arguments":{
-            "branchResult":"ok",
-            "argument":"passed from config.json for coupon_ok"
+            "branchResult":"ok"
         },
          "metaData":{
          "label":"Coupon OK"
 		},
       {
         "arguments":{
-            "branchResult":"error",
-            "argument":"passed from config.json for coupon_error"
+            "branchResult":"error"
         },
         "metaData":{
          "label":"Coupon Error"

@@ -31,27 +31,21 @@
    "lang":{
       "en-US":{
          "name": "Custom Split",
-		 "description": "Testing the Custom Split in JB",
-         "i18n_wishlist":"Wishlist",
-         "i18n_cart":"Cart",
-         "i18n_purchase":"Purchase"
+		 "description": "Testing the Custom Split in JB",         
       }
-   },
-   "outcomeLabelLanguageMap":{
-      "coupon_ok":"i18n_wishlist",
-      "coupon_failed":"i18n_cart",
-      "purchase_item":"i18n_purchase"
    },
     "arguments": {
         "execute": {       
 			"inArguments":[
 				{ 
-					"contactKey": "{{Contact.Key}}"
-					
+					"contactKey": "{{Contact.Key}}"					
 				}
                 
 			],
             "outArguments": [
+				{
+					"status":"number"
+				}
 			],			
 			"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/execute/",
             "verb": "POST",

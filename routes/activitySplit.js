@@ -139,18 +139,21 @@ exports.execute = function( req, res ) {
 
 	console.log('Custom Split for ', contactKey);
 	var bResult = "error";
+	var nStatus = -1;
 	
 	if(contactKey.indexOf("001") >= 0)
 	{
 		bResult = "ok";
+		nStatus = 1;
 	}	
 	
-	console.log('Custom Split result = ' + bResult);
+	var objResults = {
+		"branchResult": bResult,
+		"status": nStatus
+	};
+	console.log('Custom Split result = ' + objResults);
 	
-	
-	res.send( 200, 
-			{"branchResult": "ok"}
-		);
+	res.send( 200, objResults);
 	
 	/*
 	var post_data = JSON.stringify({  

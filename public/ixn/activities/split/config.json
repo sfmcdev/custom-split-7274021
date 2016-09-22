@@ -6,23 +6,28 @@
         "iconSmall": "images/jb-icon.jpg"
     },
     "type": "RESTDECISION",
-	   "outcomes":[
-      {
-        "arguments":{
-            "branchResult":"ok"
-        },
-         "metaData":{
-         "label":"Coupon OK"
-		},
-      {
-        "arguments":{
-            "branchResult":"error"
-        },
-        "metaData":{
-         "label":"Coupon Error"
-		}
-      }
-   ],
+		"outcomes":[
+			{
+				"arguments":
+				{
+					"branchResult":"ok"
+				},
+				"metaData":
+				{
+					"label":"Coupon OK"
+				}
+			},
+			{
+				"arguments":
+				{
+					"branchResult":"error"
+				},
+				"metaData":
+				{
+					"label":"Coupon Error"
+				}
+			}
+		],
    "lang":{
       "en-US":{
          "name": "Custom Split",

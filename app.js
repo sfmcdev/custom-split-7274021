@@ -96,7 +96,8 @@ app.post('/logout', routes.logout );
 app.post('/ixn/activities/split/save/', activitySplit.save );
 app.post('/ixn/activities/split/validate/', activitySplit.validate );
 app.post('/ixn/activities/split/publish/', activitySplit.publish );
-app.post('/ixn/activities/split/execute/', tokenFromJWT, activitySplit.execute );
+//app.post('/ixn/activities/split/execute/', tokenFromJWT, activitySplit.execute );
+app.post('/ixn/activities/split/execute/', activitySplit.execute );
 
 
 

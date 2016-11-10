@@ -84,12 +84,22 @@
             "customerKey": "",
             "useJwt": false
         }
-    },
-    "edit": {
-    	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/",
+    }
+	
+	"userInterfaces": {
+    "configModal": {
+		"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/",
         "height": 400,
         "width": 500
     },
+    "runningModal": {
+        "url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_modal.html"
+    },
+    "runningHover": {
+        "url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_hover.html"
+    }
+}
+	
 	"runningHover": {
         	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_hover.html",
             "verb": "POST",

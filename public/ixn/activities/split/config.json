@@ -84,32 +84,19 @@
             "customerKey": "",
             "useJwt": false
         }
-    }
+    },
 	
 	"userInterfaces": {
-    "configModal": {
-		"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/",
-        "height": 400,
-        "width": 500
-    },
-    "runningModal": {
-        "url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_modal.html"
-    },
-    "runningHover": {
-        "url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_hover.html"
-    }
-}
-	
-	"runningHover": {
-        	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_hover.html",
-            "verb": "POST",
-            "body": "",
-            "useJwt": false            
-	},
-	"runningModal": {
-        	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_modal.html",
-            "verb": "POST",
-            "body": "",
-            "useJwt": false            
-    }
+		"configModal": {
+			"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/",
+			"height": 400,
+			"width": 500
+		},
+		"runningModal": {
+			"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_modal.html"
+		},
+		"runningHover": {
+			"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_hover.html"
+		}
+	}
 }

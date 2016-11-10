@@ -90,4 +90,16 @@
         "height": 400,
         "width": 500
     }
+	"runningHover": {
+        	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_hover.html",
+            "verb": "POST",
+            "body": "",
+            "useJwt": false            
+	}
+	"runningModal": {
+        	"url": "https://custom-split-7274021.herokuapp.com/ixn/activities/split/running_modal.html",
+            "verb": "POST",
+            "body": "",
+            "useJwt": false            
+    }
 }

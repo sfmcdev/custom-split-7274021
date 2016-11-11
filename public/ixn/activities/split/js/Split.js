@@ -11,9 +11,10 @@ define( function( require ) {
 	var endpoints;
 	
     $(window).ready(onRender);
-
-    connection.on('initActivity', function(payload) {
-        //var amount;
+	
+	function InitConfigWindow(payload)
+	{
+		//var amount;
 		var titleEn;
 		var contentEn;
 		var titleTc;
@@ -66,7 +67,16 @@ define( function( require ) {
 		
 		connection.trigger('updateButton', { button: 'next', enabled: false });
 		gotoStep(step);
-        
+	}
+
+    connection.on('initActivity', function(payload) {
+        InitConfigWindow(payload)
+    });
+	connection.on('initActivityRunningHover', function(payload) {
+        InitConfigWindow(payload)
+    });
+	connection.on('initActivityRunningHover', function(payload) {
+        InitConfigWindow(payload)
     });
 
     connection.on('requestedEndpoints', function(data) {

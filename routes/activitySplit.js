@@ -129,6 +129,8 @@ exports.execute = function( req, res ) {
 	var titleTc = oArgs.titleTc;
 	var contentTc = oArgs.contentTc;
 	var messageType = oArgs.messageType;
+	
+	console.log("content EN = " + contentEn);
 	//var valueTier = oArgs.valueTier;
 	//var bonusType = oArgs.type;
 	//var bonusId = oArgs.bonus;

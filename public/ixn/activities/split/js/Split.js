@@ -75,7 +75,7 @@ define( function( require ) {
 	connection.on('initActivityRunningHover', function(payload) {
         InitConfigWindow(payload)
     });
-	connection.on('initActivityRunningHover', function(payload) {
+	connection.on('initActivityRunningModal', function(payload) {
         InitConfigWindow(payload)
     });
 
